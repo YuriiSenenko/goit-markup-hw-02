@@ -9,7 +9,6 @@
   --title-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
 }
 
 body {
@@ -27,11 +26,13 @@ a {
 
 /* Шапка */
 header {
-  background-color: var(--white-color);
+  background-color: #ffffff;
 }
-.logo,
+/* Логотип   */
+.logo-header,
 .logo-footer {
-  color: var(--accent-color);
+  color: #2196f3;
+  text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -39,13 +40,14 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo span {
+.logo-header > span {
   color: #000000;
 }
-
 /* Ссылки */
 .site-nav .link-nav {
   color: var(--title-color);
+  text-decoration: none;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,25 +57,23 @@ header {
 .site-nav .link-nav:focus {
   color: var(--accent-color);
 }
-
-/* Контакты */
+/* Адрес, телефон */
 .link .address {
   color: var(--secondary-text-color);
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link .address:hover,
-.link .address:focus {
+.address:hover,
+.address:focus {
   color: var(--accent-color);
 }
 
-/* Main СТУДИЯ */
+/* Мейн */
 
-/* Герой */
-.hero-text {
-  color: var(--white-color);
+h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,9 +81,21 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero .button {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+.button-list .button {
+  color: var(--title-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button {
+  color: var(--title-color);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -94,36 +106,36 @@ header {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
 /* Особенности */
-.peculiarities h3 {
-  color: var(--title-color);
+.our-work h3 {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.peculiarities p {
+.our-work p {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-/* Чем мы занимаемся */
-.our-work h2,
+.work h2,
 .our-team h2 {
-  color: var(--title-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-/* Наша команда */
 .our-team h3 {
-  color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -135,24 +147,10 @@ header {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-
-/* Main  ПОРТФОЛИО */
-.buttons-list .button {
+/* Список проектов */
+.project-list .title {
   color: var(--title-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-.buttons-list .button:hover,
-.buttons-list .button:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
-.project-list h2 {
-  color: var(--title-color);
+  text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -160,16 +158,29 @@ header {
 }
 .project-list p {
   color: var(--secondary-text-color);
+  text-decoration: none;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
 /* Футер */
-.logo-footer span {
-  color: var(--white-color);
+
+footer {
+  background-color: #2f303a;
 }
+.logo-footer {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo-footer span {
+  color: #ffffff;
+}
+
 .address-link {
-  color: var(--white-color);
+  color: #ffffff;
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -181,10 +192,6 @@ header {
 .footer .address {
   color: var(--secondary-text-color);
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.footer .address:hover,
-.footer .address:focus {
-  color: var(--accent-color);
 }
