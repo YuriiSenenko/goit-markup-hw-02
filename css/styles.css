@@ -165,6 +165,9 @@ header {
   letter-spacing: 0.03em;
 }
 /* Футер */
+footer {
+  background-color: #2f303a;
+}
 .logo-footer span {
   color: var(--white-color);
 }
