@@ -137,9 +137,6 @@ header {
 }
 
 /* Main  ПОРТФОЛИО */
-.project-buttons h1 {
-  display: none;
-}
 .buttons-list .button {
   color: var(--title-color);
   font-weight: 500;
