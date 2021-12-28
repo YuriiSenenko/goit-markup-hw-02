@@ -99,20 +99,20 @@ header {
 }
 
 /* Особенности */
-.peculiarities h3 {
+.peculiarities .peculiarities-title {
   color: var(--title-color);
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.peculiarities p {
+.peculiarities .peculiarities-description {
   color: var(--secondary-text-color);
   line-height: 1.71;
 }
 
 /* Чем мы занимаемся */
-.our-work h2,
-.our-team h2 {
+.our-work .title,
+.our-team .title {
   color: var(--title-color);
   font-weight: bold;
   font-size: 36px;
@@ -121,13 +121,13 @@ header {
 }
 
 /* Наша команда */
-.our-team h3 {
+.our-team .name {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
-.our-team p {
+.our-team .position {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -148,14 +148,14 @@ header {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-.project-list h2 {
+.project-list .title {
   color: var(--title-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.project-list p {
+.project-list .meaning {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
